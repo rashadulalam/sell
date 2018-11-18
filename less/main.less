@@ -1,0 +1,27 @@
+@primarycolor: #ff7f50;
+@color: #800080;
+
+h1 {
+	color: @primarycolor;
+}
+
+h3 {
+	color: @color;
+}
+
+h2 {
+	color: green;
+}
+
+.myclass {
+	@media screen {
+		color: blue;
+		@media (min-width: 1024px) {
+			color: green;
+		}
+	}
+
+	@media mytext {
+		color: black;
+	}
+}
